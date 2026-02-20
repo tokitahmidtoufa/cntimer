@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cntimer"
+version = "0.1.11"
+description = "Automatic execution time and memory tracker for Python scripts — works with VSCode, terminal, and every Python runner automatically."
+readme = "README.md"
+requires-python = ">=3.7"
+license = "MIT"
+authors = [
+    { name = "tokitahmidtoufa" }
+]
+keywords = [
+    "timer", "profiler", "memory", "performance",
+    "benchmark", "execution time", "developer tools", "debugging"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Software Development :: Debuggers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System :: Benchmark",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/tokitahmidtoufa/cntimer"
+Repository = "https://github.com/tokitahmidtoufa/cntimer"
+"Bug Tracker" = "https://github.com/tokitahmidtoufa/cntimer/issues"
+Changelog = "https://github.com/tokitahmidtoufa/cntimer/releases"
+
+[project.scripts]
+cntimer = "cntimer.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.setuptools.package-data]
+cntimer = ["cntimer.pth"]

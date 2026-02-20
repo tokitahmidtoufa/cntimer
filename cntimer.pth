@@ -1,0 +1,1 @@
+import sys; exec("try:\n import cntimer._autostart\nexcept ModuleNotFoundError:\n import os,sysconfig\n p=os.path.join(sysconfig.get_path('purelib') or '','cntimer.pth')\n os.path.exists(p) and os.remove(p)")
